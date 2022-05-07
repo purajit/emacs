@@ -28,7 +28,6 @@
 (menu-bar-mode -1)
 
 (defun load-spacemacs-theme ()
-  (require 'spaceline-config)
   (setq powerline-height 20)
   (load-theme 'gruvbox-dark-soft t)
   (spaceline-emacs-theme)
