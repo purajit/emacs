@@ -13,7 +13,7 @@
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(latex-preview-pane puppet-mode lua-mode go-mode groovy-mode coffee-mode scss-mode thrift csv-mode yaml-mode gruvbox-theme indent-guide geiser json-mode js2-mode rainbow-mode elisp-slime-nav counsel swiper ivy helm-projectile helm lsp-ui company-lsp rainbow-delimiters spaceline powerline smooth-scrolling spacemacs-theme exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number move-text magit projectile imenu-anywhere hl-todo guru-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region epl editorconfig easy-kill diminish diff-hl discover-my-major crux browse-kill-ring beacon anzu ace-window))
+   '(latex-preview-pane puppet-mode lua-mode go-mode groovy-mode coffee-mode scss-mode thrift csv-mode yaml-mode gruvbox-theme indent-guide geiser json-mode js2-mode rainbow-mode elisp-slime-nav counsel swiper ivy helm-projectile helm lsp-ui rainbow-delimiters spaceline powerline smooth-scrolling spacemacs-theme exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number move-text magit projectile imenu-anywhere hl-todo guru-mode gitconfig git-timemachine gist flycheck expand-region epl editorconfig easy-kill diminish diff-hl discover-my-major crux browse-kill-ring beacon anzu ace-window))
  '(safe-local-variable-values '((flycheck-disabled-checkers emacs-lisp-checkdoc)))
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
@@ -43,6 +43,11 @@
  ;; If there is more than one, they won't work right.
  '(mode-line ((t (:foreground "#030303" :background "#bdbdbd" :box nil))))
  '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil)))))
+
+(setq prelude-packages (append package-selected-packages prelude-packages))
+
+;; Install my packages
+(prelude-install-packages)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Modes
