@@ -13,7 +13,7 @@
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(terraform-mode dockerfile-mode latex-preview-pane puppet-mode lua-mode go-mode coffee-mode scss-mode thrift csv-mode yaml-mode gruvbox-theme indent-guide geiser json-mode js2-mode rainbow-mode elisp-slime-nav counsel ivy helm-projectile helm lsp-ui rainbow-delimiters spaceline powerline smooth-scrolling spacemacs-theme exec-path-from-shell which-key volatile-highlights super-save smartparens magit projectile hl-todo gitconfig git-timemachine flycheck epl editorconfig diminish discover-my-major))
+   '(emacsql-psql terraform-mode dockerfile-mode latex-preview-pane puppet-mode lua-mode go-mode coffee-mode scss-mode thrift csv-mode yaml-mode gruvbox-theme indent-guide geiser json-mode js2-mode rainbow-mode elisp-slime-nav helm-projectile helm lsp-ui rainbow-delimiters spaceline powerline smooth-scrolling spacemacs-theme exec-path-from-shell which-key volatile-highlights super-save smartparens magit projectile hl-todo gitconfig git-timemachine flycheck epl editorconfig diminish discover-my-major))
  '(safe-local-variable-values '((flycheck-disabled-checkers emacs-lisp-checkdoc)))
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map

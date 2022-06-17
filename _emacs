@@ -2,6 +2,7 @@
 ;; to avoid any problems with this.
 ;;; Commentary:
 ;;; Code:
+
 (defvar first-time t
   "Flag signifying this is the first time that .emacs has been evaled.")
 
@@ -13,15 +14,13 @@
 (setq prelude-guru nil)
 
 ;; ido mode extra config
-(setq ido-file-extensions-order '(".hs" ".py" ".lhs" ".org" ".tex" ".txt" ".xml" ".el" ))
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
 (ido-mode 1)
 
 ;; Appearance
 (add-to-list 'default-frame-alist
-	     '(font . "Menlo-13"))
-(require 'smooth-scrolling)
+	     '(font . "Noto Sans Mono-13"))
 (setq ring-bell-function 'ignore)
 (smooth-scrolling-mode 1)
 (scroll-bar-mode -1)
@@ -42,16 +41,10 @@
     (add-hook 'after-make-frame-functions #'load-theme-in-frame)
   (load-spacemacs-theme))
 
-(setq beacon-color "#666600")
-(setq beacon-size 80)
-(setq beacon-blink-when-focused 1)
-(setq beacon-blink-delay 0)
-(setq beacon-blink-duration 0.1)
-
 ;; Basic global modes
 (setq show-trailing-whitespace t)
-;; (global-linum-mode 1)
 (smartparens-global-mode t)
+(setq-default tab-width 4)
 
 ;; key bindings
 (setq map (make-sparse-keymap))
@@ -62,7 +55,7 @@
 (setq mac-option-modifier 'hyper) ; sets the Option key as Hyper
 (global-unset-key (kbd "<magnify-up>"))
 (global-unset-key (kbd "<magnify-down>"))
-(global-set-key "\M-g" 'goto-line)
+;; (global-set-key "\M-g" 'goto-line)
 (global-set-key "\C-z" nil)
 
 (message "Configuration loaded.")
