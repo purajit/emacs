@@ -20,7 +20,7 @@
 
 ;; Appearance
 (add-to-list 'default-frame-alist
-	     '(font . "Noto Sans Mono-13"))
+	         '(font . "Iosevka Comfy-14"))
 (setq ring-bell-function 'ignore)
 (smooth-scrolling-mode 1)
 (scroll-bar-mode -1)
